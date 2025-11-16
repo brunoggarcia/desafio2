@@ -1,9 +1,3 @@
-# 🧭 Sistema de Gerenciamento de Destinos Turísticos
-
-API REST simples para cadastro, pesquisa, listagem e avaliação de destinos turísticos.
-
----
-
 ## ▶️ Como Executar o Projeto
 
 ### 1. Clone o repositório
