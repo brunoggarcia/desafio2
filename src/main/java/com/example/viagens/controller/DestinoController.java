@@ -17,32 +17,27 @@ public class DestinoController {
         this.service = service;
     }
 
-    // Criar
     @PostMapping
     public ResponseEntity<Destino> criar(@RequestBody Destino destino) {
         return ResponseEntity.status(201).body(service.criar(destino));
     }
 
-    // Listar
     @GetMapping
     public List<Destino> listar() {
         return service.listarTodos();
     }
 
-    // Detalhes
     @GetMapping("/{id}")
     public ResponseEntity<Destino> detalhes(@PathVariable long id) {
         Destino d = service.buscarPorId(id);
         return d == null ? ResponseEntity.notFound().build() : ResponseEntity.ok(d);
     }
 
-    // Pesquisar por nome ou localização
     @GetMapping("/pesquisar")
     public List<Destino> pesquisar(@RequestParam String termo) {
         return service.pesquisarPorNomeOuLocalizacao(termo);
     }
 
-    // >>> NOVO ENDPOINT DE AVALIAÇÃO <<
     @PostMapping("/{id}/avaliar")
     public ResponseEntity<String> avaliar(
             @PathVariable long id,
@@ -61,7 +56,6 @@ public class DestinoController {
         return ResponseEntity.ok("Nova média: " + d.getMediaAvaliacoes());
     }
 
-    // Excluir
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> excluir(@PathVariable long id) {
         if (service.excluir(id))
