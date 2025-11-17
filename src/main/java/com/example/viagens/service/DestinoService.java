@@ -45,7 +45,6 @@ public class DestinoService {
         return destinos.removeIf(d -> d.getId() == id);
     }
 
-    // >>> NOVO MÉTODO DE AVALIAÇÃO <<
     public Destino avaliar(long id, int nota) {
         Destino destino = buscarPorId(id);
         if (destino != null) {
