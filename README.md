@@ -68,7 +68,7 @@ curl -X POST "http://localhost:8080/destinos/1/avaliar?nota=8"
 ```
 
 ### 🗑️ **Excluir destino**
-**DELETE /destinos/{id}
+**DELETE /destinos/{id}**
 ```bash
 curl -X DELETE "http://localhost:8080/destinos/1"
 ```
