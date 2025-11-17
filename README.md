@@ -15,11 +15,6 @@ cd SEU_REPO
 mvn spring-boot:run
 ```
 
-A API iniciará em:
-```
-http://localhost:8080
-```
-
 ---
 
 ## 📌 Endpoints da API — Exemplos Completos
