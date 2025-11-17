@@ -48,7 +48,7 @@ curl "http://localhost:8080/destinos/1"
 ### 📍 **Pesquisar por nome**
 **GET /destinos/pesquisar?nome=xxx**
 ```bash
-curl "http://localhost:8080/destinos/pesquisar?nome=praia"
+curl "http://localhost:8080/destinos/pesquisar?termo=praia"
 ```
 
 ---
@@ -56,7 +56,7 @@ curl "http://localhost:8080/destinos/pesquisar?nome=praia"
 ### 📍 **Pesquisar por localização**
 **GET /destinos/pesquisar?localizacao=xxx**
 ```bash
-curl "http://localhost:8080/destinos/pesquisar?localizacao=natal"
+curl "http://localhost:8080/destinos/pesquisar?termo=natal"
 ```
 
 ---
