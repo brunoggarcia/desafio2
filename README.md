@@ -2,7 +2,7 @@
 
 ### 1. Clone o repositório
 ```bash
-git clone https://github.com/SEU_USUARIO/SEU_REPO.git
+git clone https://github.com/brunoggarcia/desafio2.git
 ```
 
 ### 2. Acesse o diretório do projeto
