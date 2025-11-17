@@ -27,9 +27,6 @@ public class Destino {
     public String getDescricao() { return descricao; }
     public void setDescricao(String descricao) { this.descricao = descricao; }
 
-    public Double getPrecoPacote() { return precoPacote; }
-    public void setPrecoPacote(Double precoPacote) { this.precoPacote = precoPacote; }
-
     public boolean isDisponivel() { return disponivel; }
     public void setDisponivel(boolean disponivel) { this.disponivel = disponivel; }
 
