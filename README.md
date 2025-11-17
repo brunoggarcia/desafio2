@@ -67,9 +67,10 @@ curl "http://localhost:8080/destinos/pesquisar?termo=natal"
 curl -X POST "http://localhost:8080/destinos/1/avaliar?nota=8"
 ```
 
-Resposta esperada:
-```
-Nova média: 8.0
+### 🗑️ **Excluir destino**
+**DELETE /destinos/{id}
+```bash
+curl -X DELETE "http://localhost:8080/destinos/1"
 ```
 
 ---
