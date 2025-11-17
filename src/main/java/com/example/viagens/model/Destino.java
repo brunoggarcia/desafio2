@@ -9,7 +9,6 @@ public class Destino {
     private Double precoPacote;
     private boolean disponivel = true;
 
-    // >>> NOVOS CAMPOS <<<
     private int totalAvaliacoes = 0;
     private double somaAvaliacoes = 0;
     private double mediaAvaliacoes = 0;
@@ -36,7 +35,6 @@ public class Destino {
 
     public double getMediaAvaliacoes() { return mediaAvaliacoes; }
 
-    // >>> NOVO MÉTODO DE AVALIAÇÃO <<<
     public void adicionarAvaliacao(int nota) {
         this.totalAvaliacoes++;
         this.somaAvaliacoes += nota;
